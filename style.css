@@ -231,6 +231,8 @@ ul .submenu__spec {
 
 .banner__button>ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .banner__button>ul>li>a {
@@ -244,6 +246,7 @@ ul .submenu__spec {
 }
 
 .banner--btn-first {
+    margin-bottom: 2%;
     color: #fff; 
     background-color: #0090c5;
     font-weight: 800;
@@ -255,6 +258,7 @@ ul .submenu__spec {
 }
 
 .banner--btn-second {
+    margin-top: 2%;
     color: #444; 
     background-color: #f2f2f2;
     font-weight: 800;
@@ -401,8 +405,24 @@ footer>.footer__inner>div>a {
     color: #858585;
 }
 
+footer>.footer__inner>div>a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
 footer>.footer__inner>div>a:hover {
     text-decoration: none;
+}
+
+.footer__img {
+    display: flex;
+    flex-direction: column;
+    color: #444;
+}
+
+.footer__img>div>h2 {
+    font-size: 2rem;
 }
 
 .footer__img>a:hover {
@@ -450,7 +470,6 @@ footer>.footer__inner>div>a:hover {
     .topmenu>li>a {
         display: block;
         width: 100%;
-        text-decoration: 0;
     }
 
     .toggle {
