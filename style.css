@@ -94,6 +94,12 @@ h1>a {
     text-decoration: none;
 }
 
+h2 {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: #444;
+}
+
 .logo__span {
     margin: 20px;
     align-items: center;
@@ -210,11 +216,17 @@ ul .submenu__spec {
 
 .banner {
     display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 5px;
     padding: 0 6rem 0;
+}
+
+.banner-spec {
+    font-size: 3.5rem;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .banner__button>ul {
@@ -256,8 +268,15 @@ ul .submenu__spec {
 .banner__inner {
     width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5% 0;
+}
+
+.span__banner {
+    font-weight: normal; 
+    color: #696969;
+    font-size: 3.5rem;
 }
 
 .banner__button {
@@ -486,6 +505,8 @@ footer>.footer__inner>div>a:hover {
 
     .banner__inner {
         width: 100%;
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
